@@ -1,0 +1,78 @@
+body {
+  padding-top: 20px;
+  background-color: #1A1A1C;
+  color: white;
+}
+
+input {
+  height: 40px;
+  width: 71%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  background-color: #1A1A1C;
+  color: white;
+}
+
+::placeholder {
+    color: white;
+    padding-left: 10px;
+}
+
+button {
+  height: 46px;
+  width: 12%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  background-color: #1A1A1C;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+table th, table td {
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+table th {
+  background-color: lightgray;
+}
+
+table td img {
+  width: 40px;
+}
+
+table :first-child {
+    width: 40px;
+}
+
+table :nth-child(2) {
+    width: 140px;
+}
+
+table :nth-child(3) {
+    width: 100px;
+}
+
+
+table :nth-child(6) {
+    width: 100px;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
