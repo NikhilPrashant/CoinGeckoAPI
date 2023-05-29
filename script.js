@@ -30,7 +30,11 @@ const renderData = (data) => {
 
 const searchData = (event) => {
   const searchTerm = event.target.value;
-  const filteredData = data.filter((coin) => coin.name.toLowerCase().includes(searchTerm.toLowerCase()));
+  const filteredData = data.filter((coin) => {
+    const nameMatches = coin.name.toLowerCase().includes(searchTerm.toLowerCase());
+    const symbolMatches = coin.symbol.toLowerCase().includes(searchTerm.toLowerCase());
+    return nameMatches || symbolMatches;
+  });
   console.log("Filtered data:", filteredData);
   renderData(filteredData);
 };
